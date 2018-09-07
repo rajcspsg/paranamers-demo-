@@ -1,0 +1,17 @@
+group 'parameter-namer-demo'
+version '1.0-SNAPSHOT'
+
+project(':with-paranamers') {
+    apply plugin : 'java'
+    dependencies {
+        compile project(':common')
+    }
+}
+
+project(':without-paranamers') {
+    apply plugin : 'java'
+    dependencies {
+        compile project(':common')
+    }
+}
+

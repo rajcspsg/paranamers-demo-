@@ -1,0 +1,28 @@
+
+plugins {
+    id 'java'
+}
+
+group 'with-paranamers'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'com.thoughtworks.paranamer', name: 'paranamer', version: '2.8'
+}
+
+task('runMain', dependsOn: 'classes', type: JavaExec) {
+    main = 'ParametersExample'
+    args '9999'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+

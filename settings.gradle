@@ -1,0 +1,5 @@
+rootProject.name = 'paranamers-demo'
+include 'with-paranamers'
+include 'without-paranamers'
+include 'common'
+
